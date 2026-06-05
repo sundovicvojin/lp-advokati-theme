@@ -16,7 +16,7 @@
 
         <div class="footer__box footer__contact">
             <h3><?php esc_html_e('Kontakt', 'lp-advokati'); ?></h3>
-            <p>info@lp.rs</p>
+            <p><a href="mailto:office@lp.rs">office@lp.rs</a></p>
             <p>Pon - Pet: 09:00 - 17:00</p>
         </div>
 

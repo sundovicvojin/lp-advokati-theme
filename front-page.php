@@ -154,7 +154,6 @@ get_header();
             <p><?php esc_html_e('Internacionalnih brigada 69, Beograd 11000, Srbija.', 'lp-advokati'); ?></p>
         </div>
         <div class="contact-details">
-            <a href="mailto:office@lp.rs">office@lp.rs</a>
             <a href="tel:+381113283300">+381 11 328 33 00</a>
             <a href="tel:+381113283301">+381 11 328 33 01</a>
             <span><?php esc_html_e('Internacionalnih brigada 69, Beograd', 'lp-advokati'); ?></span>

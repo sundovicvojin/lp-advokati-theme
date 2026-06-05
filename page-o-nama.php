@@ -56,7 +56,7 @@ get_header();
                         </span>
 
                         <h2 class="about-hero-copy__title">
-                            <?php esc_html_e('Advokatsko ortacko drustvo Lazarevic & Prsic advokati', 'lp-advokati'); ?>
+                            <?php esc_html_e('AOD Lazarevic & Prsic advokati', 'lp-advokati'); ?>
                         </h2>
 
                         <p class="about-hero-copy__text">
@@ -122,7 +122,7 @@ get_header();
                             </article>
 
                             <article class="about-mini-card about-mini-card--dark">
-                                <span class="about-mini-card__index">4.5/5</span>
+                                <span class="about-mini-card__index">04</span>
 
                                 <h3 class="about-mini-card__title">
                                     <?php esc_html_e('Poverenje klijenata', 'lp-advokati'); ?>
