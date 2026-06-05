@@ -615,6 +615,7 @@ h3 {
 }
 
 .footer__bottom p {
+  color: #fff;
   margin: 0;
   font-size: 14px;
 }
@@ -2297,6 +2298,42 @@ h3 {
 }
 
 @media (max-width: 920px) {
+  .about-hero {
+    padding: 160px 0 76px;
+  }
+
+  .about-hero__top,
+  .about-story-grid,
+  .single-team-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__top {
+    align-items: start;
+  }
+
+  .about-hero__meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-description--hero,
+  .team-hero-intro__box {
+    padding: 34px;
+  }
+
+  .about-story-side-grid,
+  .about-team-preview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-team-card {
+    min-height: 360px;
+  }
+
+  .about-team-card__name {
+    font-size: 34px;
+  }
+
   .about-intro-grid {
     grid-template-columns: 1fr;
   }
@@ -2307,6 +2344,27 @@ h3 {
 
   .about-card__title {
     font-size: 28px;
+  }
+
+  .single-team-hero__grid {
+    gap: 36px;
+    margin-top: 34px;
+  }
+
+  .single-team-hero__media {
+    order: 1;
+  }
+
+  .single-team-hero__content {
+    order: 2;
+  }
+
+  .single-team-hero__image {
+    max-width: 520px;
+  }
+
+  .single-team-socials {
+    justify-content: center;
   }
 
   .kontakt-layout {
@@ -2449,6 +2507,87 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  .about-hero {
+    padding: 132px 0 58px;
+  }
+
+  .about-hero__content {
+    gap: 28px;
+  }
+
+  .about-hero__top {
+    gap: 28px;
+  }
+
+  .about-hero__meta,
+  .about-story-side-grid,
+  .about-team-preview__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-stat {
+    min-height: 0;
+    padding: 22px;
+  }
+
+  .about-title {
+    font-size: clamp(44px, 16vw, 64px);
+  }
+
+  .about-description--hero,
+  .team-hero-intro__box {
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .about-hero-copy {
+    margin-bottom: 34px;
+  }
+
+  .about-hero-copy__title,
+  .team-hero-intro__title {
+    font-size: clamp(32px, 10vw, 44px);
+    line-height: 1.04;
+  }
+
+  .about-hero-copy__text,
+  .about-story-card__text,
+  .team-hero-intro__text {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .about-story-grid {
+    gap: 18px;
+  }
+
+  .about-story-card,
+  .about-mini-card {
+    padding: 24px;
+    border-radius: 14px;
+  }
+
+  .about-mini-card__title {
+    font-size: 24px;
+  }
+
+  .about-team-preview {
+    margin-top: 56px;
+  }
+
+  .about-team-preview__header {
+    margin-bottom: 28px;
+  }
+
+  .about-team-card {
+    min-height: 340px;
+    padding: 24px;
+  }
+
+  .about-team-card__name {
+    font-size: 32px;
+  }
+
   .about-intro-grid-section {
     padding-bottom: 74px;
   }
@@ -2464,14 +2603,6 @@ h3 {
 
   .about-card--large {
     grid-column: span 1;
-  }
-
-  .about-hero {
-    padding: 150px 0 64px;
-  }
-
-  .about-title {
-    font-size: clamp(48px, 16vw, 72px);
   }
 
   .about-description p,
@@ -2499,6 +2630,38 @@ h3 {
 
   .about-card__title {
     font-size: 26px;
+  }
+
+  .single-team-page .single-team-hero {
+    padding-top: 118px;
+  }
+
+  .single-team-hero__grid {
+    gap: 28px;
+    margin-top: 20px;
+  }
+
+  .single-team-hero__image {
+    max-width: 100%;
+  }
+
+  .single-team-hero__image img {
+    max-height: none;
+    aspect-ratio: 1 / 1.08;
+  }
+
+  .single-team-socials {
+    margin-top: 20px;
+  }
+
+  .single-team-socials__linkedin {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .single-team-hero__title {
+    font-size: clamp(38px, 13vw, 58px);
+    line-height: 1.02;
   }
 
   .kontakt-hero {
@@ -2654,7 +2817,7 @@ h3 {
 
   .footer__bottom {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-space;
   }
 
   .content-main {
@@ -2662,3 +2825,167 @@ h3 {
     padding: 130px 0 72px;
   }
 }
+
+/* LP Animations Start */
+.site-header {
+  transition:
+    background 240ms ease,
+    border-color 240ms ease,
+    box-shadow 240ms ease,
+    backdrop-filter 240ms ease;
+}
+
+.site-header.is-scrolled {
+  box-shadow: 0 12px 32px rgba(8, 23, 18, 0.12);
+}
+
+.button,
+.content-body .wp-block-button__link,
+.content-body .wp-element-button,
+.archive-pagination .page-numbers,
+.contact-details a,
+.text-link {
+  transition:
+    transform 200ms ease,
+    background 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.content-body .wp-block-button__link:hover,
+.content-body .wp-block-button__link:focus-visible,
+.content-body .wp-element-button:hover,
+.content-body .wp-element-button:focus-visible,
+.archive-pagination .page-numbers:hover,
+.archive-pagination .page-numbers:focus-visible,
+.contact-details a:hover,
+.contact-details a:focus-visible,
+.text-link:hover,
+.text-link:focus-visible {
+  transform: translateY(-2px);
+}
+
+.practice-grid article,
+.archive-card,
+.practice-area-card__link,
+.intro-panel div,
+.archive-intro-card>*,
+.archive-intro-card>.wp-block-columns>.wp-block-column,
+.about-mini-card,
+.contact-details a,
+.contact-details span {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background 220ms ease,
+    color 220ms ease;
+}
+
+.archive-card:hover,
+.archive-card:focus-within,
+.intro-panel div:hover,
+.intro-panel div:focus-within,
+.contact-details a:hover,
+.contact-details a:focus-visible {
+  box-shadow: 0 22px 48px rgba(8, 23, 18, 0.1);
+  transform: translateY(-4px);
+}
+
+.hero-media {
+  z-index: 0;
+}
+
+.hero-overlay {
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.lp-front-parallax {
+  --lp-parallax-y: 0px;
+  transform: translate3d(0, var(--lp-parallax-y), 0) scale(1.035);
+}
+
+.lp-front-parallax.is-parallax-active {
+  will-change: transform;
+}
+
+.team > img.lp-front-parallax {
+  transform: translate3d(0, var(--lp-parallax-y), 0);
+}
+
+body.lp-animations-ready .lp-animate {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition:
+    opacity 720ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--lp-animation-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+body.lp-animations-ready .lp-animate.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+body.lp-animations-ready .hero .lp-animate {
+  transform: translate3d(0, 24px, 0);
+}
+
+body.lp-animations-ready .button.lp-animate.is-visible:hover,
+body.lp-animations-ready .button.lp-animate.is-visible:focus-visible,
+body.lp-animations-ready .content-body .wp-block-button__link.lp-animate.is-visible:hover,
+body.lp-animations-ready .content-body .wp-block-button__link.lp-animate.is-visible:focus-visible,
+body.lp-animations-ready .content-body .wp-element-button.lp-animate.is-visible:hover,
+body.lp-animations-ready .content-body .wp-element-button.lp-animate.is-visible:focus-visible,
+body.lp-animations-ready .archive-pagination .page-numbers.lp-animate.is-visible:hover,
+body.lp-animations-ready .archive-pagination .page-numbers.lp-animate.is-visible:focus-visible,
+body.lp-animations-ready .text-link.lp-animate.is-visible:hover,
+body.lp-animations-ready .text-link.lp-animate.is-visible:focus-visible {
+  transform: translateY(-2px);
+}
+
+body.lp-animations-ready .practice-grid article.lp-animate.is-visible:hover,
+body.lp-animations-ready .practice-grid article.lp-animate.is-visible:focus-within,
+body.lp-animations-ready .archive-card.lp-animate.is-visible:hover,
+body.lp-animations-ready .archive-card.lp-animate.is-visible:focus-within,
+body.lp-animations-ready .intro-panel div.lp-animate.is-visible:hover,
+body.lp-animations-ready .intro-panel div.lp-animate.is-visible:focus-within,
+body.lp-animations-ready .contact-details a.lp-animate.is-visible:hover,
+body.lp-animations-ready .contact-details a.lp-animate.is-visible:focus-visible {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  body.lp-animations-ready .lp-animate {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+
+  .lp-front-parallax {
+    transform: none !important;
+    will-change: auto !important;
+  }
+}
+/* LP Animations End */
