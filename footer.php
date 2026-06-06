@@ -24,6 +24,7 @@
             <h3><?php esc_html_e('Navigacija', 'lp-advokati'); ?></h3>
             <ul>
                 <li><a href="<?php echo esc_url(home_url('/')); ?>">Početna</a></li>
+                <li><a href="<?php echo esc_url(home_url('/oblasti-rada')); ?>">Oblasti rada</a></li>
                 <li><a href="<?php echo esc_url(home_url('/o-nama')); ?>">O nama</a></li>
                 <li><a href="<?php echo esc_url(home_url('/nas-tim')); ?>">Naš tim</a></li>
                 <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Blog</a></li>

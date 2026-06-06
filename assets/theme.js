@@ -215,6 +215,10 @@ window.addEventListener("scroll", syncHeader, { passive: true });
         element: frontPage.querySelector(".team > img"),
         strength: 18,
       },
+      {
+        element: frontPage.querySelector(".justice-model"),
+        strength: 150,
+      },
     ].filter((item) => item.element);
 
     if (!parallaxItems.length) {
@@ -235,6 +239,11 @@ window.addEventListener("scroll", syncHeader, { passive: true });
         const offset = Math.max(-item.strength, Math.min(item.strength, progress * item.strength * -1));
 
         item.element.style.setProperty("--lp-parallax-y", `${offset.toFixed(2)}px`);
+
+        if (item.element.classList.contains("justice-model")) {
+          const rotation = Math.max(-2, Math.min(2, progress * -2));
+          item.element.style.setProperty("--justice-rotation", `${rotation.toFixed(2)}deg`);
+        }
       });
 
       ticking = false;

@@ -80,6 +80,15 @@ get_header();
     </section>
 
     <section class="section expertise" id="oblasti">
+        <img
+            class="justice-model"
+            src="<?php echo esc_url(get_template_directory_uri() . '/assets/ladyjustice11.webp'); ?>"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+        >
+       
         <div class="section-heading">
             <div>
                 <p class="eyebrow"><?php esc_html_e('Sfere rada', 'lp-advokati'); ?></p>
